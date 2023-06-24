@@ -26,10 +26,8 @@ export const Technologies = () => {
 
   function Element({ icon, name }) {
     return (
-      <div className="flex w-full flex-col items-center justify-center rounded-2xl border p-2 hover:border-colorPage shadow-md">
-        <div className="w-[40%]">
-        {icon}
-        </div>
+      <div className="flex w-full flex-col items-center justify-center rounded-2xl border p-2 shadow-md hover:border-colorPage">
+        <div className="w-[40%]">{icon}</div>
         <h3 className="mt-2 text-center">{name}</h3>
       </div>
     );
@@ -37,8 +35,8 @@ export const Technologies = () => {
 
   function Elements() {
     return (
-      <div className="flex h-fit w-full flex-col gap-14 md:w-[90%] md:items-center">
-        <div className="grid h-full grid-cols-2 gap-4 transition-all md:grid-cols-3 md:gap-5">
+      <div className="flex h-fit w-full flex-col gap-14">
+        <div className="grid h-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {elements.map((element, index) => (
             <Element key={index} {...element} />
           ))}
@@ -51,10 +49,10 @@ export const Technologies = () => {
     <>
       <EffectScroll>
         <section
-        id="tech"
+          id="tech"
           className="containerBox z-20 flex min-h-screen flex-col items-center justify-center pt-[5rem]"
         >
-          <h1  className="mb-10 text-center text-5xl font-light ">
+          <h1 className="mb-10 text-center text-5xl font-light ">
             Technologies
           </h1>
           <Elements />
