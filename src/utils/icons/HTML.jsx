@@ -1,14 +1,12 @@
 import React from "react";
 
-export const HTML = (width,height) => {
+export const HTML = () => {
   return (
     <svg
-    width={width}
-    height={height}
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-fit"
+      className="w-full h-full mx-auto"
     >
       <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" />
       <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" />

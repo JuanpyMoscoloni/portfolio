@@ -1,6 +1,5 @@
 import React from "react";
-import { Linkedin } from "../utils";
-import { Git } from "../utils";
+import { GitHub, Linkedin } from "../utils";
 import "../styles/styles.scss";
 
 export const Home = () => {
@@ -12,7 +11,7 @@ export const Home = () => {
           <h3 className="text-center font-extralight text-lg">Front End Developer</h3>
           <div className="flex justify-center gap-2">
             <a href="https://github.com/JuanpyMoscoloni" target="_blank">
-              <Git width={40} height={40} />
+              <GitHub width={40} height={40} />
             </a>
             <a
               href="https://www.linkedin.com/in/juan-pablo-moscoloni-53a8b9245/"

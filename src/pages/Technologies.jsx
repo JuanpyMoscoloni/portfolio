@@ -8,21 +8,28 @@ import { ReactIcon } from "../utils/icons/React";
 import { Bootstrap } from "../utils/icons/Bootstrap";
 import { TailwindIcon } from "../utils/icons/Tailwind";
 import EffectScroll from "../components/EffectScroll";
+import { Git, GitHub, Postman, SASS } from "../utils";
 
 export const Technologies = () => {
   const elements = [
-    { icon: <HTML width={35} height={35}/>, name: "HTML" },
-    { icon: <CSS width={35} height={35}/>, name: "CSS" },
-    { icon: <JS  width={35} height={35}/>, name: "JavaScript" },
-    { icon: <TailwindIcon width={35} height={35}/>, name: "Tailwind" },
-    { icon: <ReactIcon width={35} height={35}/>, name: "React" },
-    { icon: <Bootstrap width={35} height={35}/>, name: "Bootstrap" },
+    { icon: <HTML />, name: "HTML" },
+    { icon: <CSS />, name: "CSS" },
+    { icon: <JS />, name: "JavaScript" },
+    { icon: <TailwindIcon />, name: "Tailwind" },
+    { icon: <ReactIcon />, name: "React" },
+    { icon: <Bootstrap />, name: "Bootstrap" },
+    { icon: <SASS />, name: "SASS" },
+    { icon: <GitHub width={"w-full"} height={"h-full"} />, name: "GitHub" },
+    { icon: <Postman />, name: "Postman" },
+    { icon: <Git />, name: "Git" },
   ];
 
   function Element({ icon, name }) {
     return (
-      <div className="flex flex-col items-center p-3 mx-auto border rounded-md hover:p-2 hover:border-colorPage">
+      <div className="flex w-full flex-col items-center justify-center rounded-2xl border p-2 hover:border-colorPage shadow-md">
+        <div className="w-[40%]">
         {icon}
+        </div>
         <h3 className="mt-2 text-center">{name}</h3>
       </div>
     );
@@ -30,8 +37,8 @@ export const Technologies = () => {
 
   function Elements() {
     return (
-      <div className="w-full h-fit flex flex-col gap-14 md:w-[90%] md:items-center">
-        <div className="w-full h-full grid grid-cols-3 transition-all gap-4">
+      <div className="flex h-fit w-full flex-col gap-14 md:w-[90%] md:items-center">
+        <div className="grid h-full grid-cols-2 gap-4 transition-all md:grid-cols-3 md:gap-5">
           {elements.map((element, index) => (
             <Element key={index} {...element} />
           ))}
@@ -44,10 +51,10 @@ export const Technologies = () => {
     <>
       <EffectScroll>
         <section
-          id="tech"
-          className="containerBox h-screen flex flex-col items-center justify-center z-20"
+        id="tech"
+          className="containerBox z-20 flex min-h-screen flex-col items-center justify-center pt-[5rem]"
         >
-          <h1 className="text-5xl font-light text-center mb-20 ">
+          <h1  className="mb-10 text-center text-5xl font-light ">
             Technologies
           </h1>
           <Elements />

@@ -3,8 +3,8 @@ import "animate.css";
 import "../styles/styles.scss";
 import EffectScroll from "../components/EffectScroll";
 import Proyects from "../components/Proyects";
+import ProyectsPhone from "../components/ProyectsPhone";
 export const Works = () => {
-
   const proyects = [
     {
       id: 1,
@@ -14,10 +14,24 @@ export const Works = () => {
       imgSrc: "./img/icon.png",
       gitUrl: "https://github.com/JuanpyMoscoloni/SocialApp",
       demoUrl: "https://social-application.web.app/login",
+      alt:"Social Media App",
     },
   ];
+  
   const containerMap = proyects.map((proyecto) => (
     <Proyects
+      key={proyecto.id}
+      id={proyecto.id}
+      title={proyecto.title}
+      description={proyecto.description}
+      imgSrc={proyecto.imgSrc}
+      gitUrl={proyecto.gitUrl}
+      demoUrl={proyecto.demoUrl}
+    />
+  ));
+
+  const containerMapPhone = proyects.map((proyecto) => (
+    <ProyectsPhone
       key={proyecto.id}
       id={proyecto.id}
       title={proyecto.title}
@@ -31,11 +45,12 @@ export const Works = () => {
   return (
     <EffectScroll>
       <section
-        id="works"
-        className="containerBox flex flex-col justify-center items-center w-full h-screen z-20"
-      >
+      id="works" 
+        className="containerBox flex flex-col justify-center items-center w-full h-fit pt-[5rem] z-20"
+        >
         <h1 className="text-5xl mb-16 font-light text-center">Works</h1>
-       {containerMap}
+      {containerMapPhone}
+      {containerMap}
       </section>
     </EffectScroll>
   );

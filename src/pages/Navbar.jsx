@@ -21,7 +21,7 @@ export const Navbar = () => {
     <div className="fixed mx-auto z-20 w-full h-[5%]">
       <div
         className={`flex items-center ${
-          !isOpen && "bg-white"
+          !isOpen && "bg-[#fffaf6]"
         } absolute h-full justify-center w-full z-30`}
       >
         <img src="./img/juanpyLogo.png" className="w-15 h-6 absolute top-3" />

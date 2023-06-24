@@ -11,6 +11,7 @@
 @layer base {
     html {
         font-family: 'Inter', sans-serif;
+        background-color: #fffaf6;
     }
   }
 

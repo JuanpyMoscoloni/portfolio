@@ -1,30 +1,30 @@
 import React from "react";
-import { Git } from "../utils/icons/Git";
 import { Internet } from "../utils/icons/Internet";
+import { GitHub } from "../utils";
 
 const Proyects = ({ title, description, imgSrc, gitUrl, demoUrl }) => {
   return (
-    <div className="cardGeneral carousel-item md:w-[60%]">
-      <span class="cardGeneral_top"></span>
-      <span class="cardGeneral_right"></span>
-      <span class="cardGeneral_bottom"></span>
-      <span class="cardGeneral_left"></span>
-      <div className="flex justify-center w-full h-full p-3">
-        <div class="box md:w-full">
-          <div class="bg">
+    <div className="cardGeneral carousel-item shadow-md max-lg:hidden max-md:hidden max-sm:hidden">
+      <span className="cardGeneral_top"></span>
+      <span className="cardGeneral_right"></span>
+      <span className="cardGeneral_bottom"></span>
+      <span className="cardGeneral_left"></span>
+      <div className="flex h-full w-full justify-center p-3">
+        <div className="box">
+          <div className="bg">
             <img
               src={imgSrc}
-              className="w-[8rem] h-[8rem]"
-              alt=""
+              className="h-[8rem] w-[8rem]"
+              alt="Social Media"
             />
           </div>
-          <span class="top"></span>
-          <span class="right"></span>
-          <span class="bottom"></span>
-          <span class="left"></span>
-          <div className="containerButton md:left-[44%]">
+          <span className="top"></span>
+          <span className="right"></span>
+          <span className="bottom"></span>
+          <span className="left"></span>
+          <div className="containerButton">
             <a href={gitUrl} target="_blank" class="btn">
-              <Git width={35} height={35} />
+              <GitHub width={35} height={35} />
             </a>
             <a href={demoUrl} target="_blank" class="btn">
               <Internet />
@@ -32,11 +32,13 @@ const Proyects = ({ title, description, imgSrc, gitUrl, demoUrl }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col relative gap-3 w-full h-full">
-        <h3 className="text-center font-semibold">{title}</h3>
-        <p className="font-normal leading-7 text-center">{description}</p>
+      <div className="relative flex h-full w-full flex-col gap-3">
+        <h3 className="text-center font-semibold md:text-2xl">{title}</h3>
+        <p className="mx-auto w-[95%] text-center font-normal leading-7">
+          {description}
+        </p>
       </div>
-      <div className="flex gap-3 w-full p-2 justify-between"></div>
+      <div className="flex w-full justify-between gap-3 p-2"></div>
     </div>
   );
 };
