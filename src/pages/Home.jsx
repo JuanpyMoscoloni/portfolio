@@ -5,11 +5,15 @@ import "../styles/styles.scss";
 export const Home = () => {
   return (
     <>
-      <div id="home" className="mx-auto h-screen">
-        <div className="flex flex-col gap-2 p-4 justify-center w-full h-screen">
-          <h1 className="text-7xl font-light text-center">Moscoloni Juan P.</h1>
-          <h3 className="text-center font-extralight text-lg">Front End Developer</h3>
-          <div className="flex justify-center gap-2">
+      <section id="home" className="mx-auto h-screen w-full">
+        <div className="flex h-screen w-full flex-col justify-center gap-2 p-4">
+          <h1 className="text-center z-10 text-7xl font-light max-lg:text-6xl">
+            Moscoloni Juan P.
+          </h1>
+          <h3 className="text-center z-10 text-lg font-extralight">
+            Front End Developer
+          </h3>
+          <div className="flex z-10 justify-center gap-2">
             <a href="https://github.com/JuanpyMoscoloni" target="_blank">
               <GitHub width={40} height={40} />
             </a>
@@ -21,13 +25,13 @@ export const Home = () => {
             </a>
           </div>
         </div>
-        <div className="flex absolute bottom-[3rem] w-full justify-center mb-3 float-animation">
-          <img
-            src="./img/flecha.png"
-            className="w-15 h-10 bg-transparent"
-          />
-        </div>
-      </div>
+        <a
+          href="#works"
+          className="float-animation absolute bottom-[3rem] mb-3 flex w-full justify-center"
+        >
+          <img src="./img/flecha.png" className="w-15 h-10 bg-transparent" />
+        </a>
+      </section>
     </>
   );
 };

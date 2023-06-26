@@ -5,12 +5,14 @@ import "./styles/styles.scss";
 import { Technologies } from "./pages/Technologies";
 import { AboutMe } from "./pages/AboutMe";
 import { Contact } from "./pages/Contact";
+import Background from "./components/Background";
 
 
 function App() {
   return (
     <>
     <div>
+      <Background/>
       <Navbar />
       <Home />
       <Works/>

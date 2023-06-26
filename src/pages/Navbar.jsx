@@ -21,19 +21,19 @@ export const Navbar = () => {
     <div className="fixed z-20 mx-auto h-[6%] w-full lg:h-[7%]">
       <div
         className={`flex items-center ${
-          !isOpen && "bg-[#fffaf6]"
-        } absolute z-30 h-full w-full justify-center shadow-md lg:hidden`}
+          !isOpen && "bg-[#fefbf8]"
+        } absolute -top-1 z-30 h-full w-full justify-center shadow-md lg:hidden`}
       >
         <a href="#home" className="flex justify-center">
           {" "}
-          <img src="./img/juanpyLogo.png" className="w-15 absolute top-3 h-6" />
+          <img src="./img/juanpyLogo.png" className="w-15 absolute top-4 h-6" />
         </a>
 
-        <button className="absolute right-5 top-3" onClick={openMenu}>
+        <button className="absolute right-5 top-4" onClick={openMenu}>
           <Bars />
         </button>
       </div>
-      <div className="absolute z-30 flex h-full w-full justify-center bg-[#fffaf6] shadow-md max-lg:hidden">
+      <div className="absolute z-30 flex h-full w-full justify-center bg-[#fefbf8] shadow-md max-lg:hidden">
         <a href="#home">
           {" "}
           <img
@@ -44,19 +44,19 @@ export const Navbar = () => {
 
         <ul className="text-md absolute top-5 flex items-center justify-center gap-12">
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">Inicio</a>
           </li>
           <li>
-            <a href="#works">Works</a>
+            <a href="#works">Trabajos</a>
           </li>
           <li>
-            <a href="#tech">Technologies</a>
+            <a href="#tech">Tecnologias</a>
           </li>
           <li>
-            <a href="#about-me">About Me</a>
+            <a href="#about-me">Sobre mi</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -68,19 +68,19 @@ export const Navbar = () => {
           className="absolute mb-[9rem] flex h-screen w-full flex-col justify-center gap-12 bg-colorPage text-center text-4xl"
         >
           <a href="#home" onClick={openMenu}>
-            Home
+            Inicio
           </a>
           <a href="#works" onClick={openMenu}>
-            Works
+          Trabajos
           </a>
           <a href="#tech" onClick={openMenu}>
-            Technologies
+            Tecnologias
           </a>
           <a href="#about-me-iphone" onClick={openMenu}>
-            About Me
+            Sobre mi
           </a>
           <a href="#contact" onClick={openMenu}>
-            Contact
+            Contacto
           </a>
         </ul>
       )}
@@ -89,11 +89,11 @@ export const Navbar = () => {
           transition-style="out:custom:circle-swoop"
           className="absolute mb-[9rem] flex h-screen w-full flex-col justify-center gap-12 bg-colorPage text-center text-4xl"
         >
-          <li>Home</li>
-          <li>Works</li>
-          <li>Technologies</li>
-          <li>About Me</li>
-          <li>Contact</li>
+          <li>Inicio</li>
+          <li>Trabajos</li>
+          <li>Tecnologias</li>
+          <li>Sobre mi</li>
+          <li>Contacto</li>
         </ul>
       )}
     </div>

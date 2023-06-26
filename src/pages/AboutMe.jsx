@@ -12,10 +12,10 @@ export const AboutMe = () => {
           id="about-me"
           className="containerBox z-20 flex min-h-screen flex-col items-center justify-center max-lg:hidden"
         >
-            <h1 className="mb-16 text-center text-5xl font-light">About Me</h1>
+            <h1 className="mb-16 text-center text-5xl font-light">Sobre mi</h1>
             <div class="mt-12 flex w-full gap-10 justify-center">
               <img
-                src="./img/juanpyFoto.png"
+                src="./img/juanpyFoto.webp"
                 alt=""
                 className="w-[30%] rounded-xl"
               />

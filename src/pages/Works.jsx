@@ -46,7 +46,7 @@ export const Works = () => {
       id="works" 
       className="containerBox z-20 flex min-h-screen flex-col items-center justify-center"
         >
-        <h1 className="text-5xl mb-16 font-light text-center">Works</h1>
+        <h1 className="text-5xl mb-16 font-light text-center">Trabajos</h1>
       {containerMapPhone}
       {containerMap}
       </section>
