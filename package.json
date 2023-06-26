@@ -1,12 +1,9 @@
 {
-  "name": "newportafolio",
+  "name": "portafolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://JuanpyMoscoloni.github.io/Portfolio",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run dev",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",

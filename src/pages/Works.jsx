@@ -39,10 +39,10 @@ export const Works = () => {
     <EffectScroll>
       <section
         id="works"
-        className="containerBox z-20 flex flex-col min-h-screen gap-4 items-center justify-center"
+        className="containerBox z-20 flex flex-col h-full w-full pt-[6rem] gap-4 items-center justify-center"
       >
         <h1 className="mb-16 text-center text-5xl font-light">Trabajos</h1>
-        <div className="w-full h-[54vh] flex max-lg:flex-col items-center gap-8 justify-center">
+        <div className="w-full h-fit flex max-lg:flex-col items-center gap-8 justify-center">
         {containerMap}
         </div>
       </section>
