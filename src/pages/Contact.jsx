@@ -6,7 +6,7 @@ export const Contact = () => {
     return (
       <input
         placeholder={customPlaceHolder}
-        className="w-full border border-gray-300 p-3 shadow-sm focus:outline-colorPage md:w-[70%]"
+        className="w-full border border-gray-300 p-3 shadow-sm focus:outline-colorPage"
       />
     );
   };
@@ -14,11 +14,11 @@ export const Contact = () => {
     <EffectScroll>
       <section
         id="contact"
-        className="containerBox z-20 flex h-screen flex-col items-center justify-center"
+        className="containerBox z-20 flex h-fit flex-col items-center justify-center pt-[5rem] pb-[18rem]"
       >
-        <div className="flex w-full flex-col items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-center ">
           <h1 className="mb-8 text-center text-5xl font-light">Contact me</h1>
-          <div className="flex w-full flex-col items-center justify-center gap-4 px-7">
+          <div className="flex w-full flex-col items-center justify-center gap-4 px-7 lg:w-[50%]">
             <ContactInput customPlaceHolder="Name" />
             <ContactInput customPlaceHolder="Email" />
             <textarea

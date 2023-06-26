@@ -18,23 +18,54 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed mx-auto z-20 w-full h-[5%]">
+    <div className="fixed z-20 mx-auto h-[6%] w-full lg:h-[7%]">
       <div
         className={`flex items-center ${
           !isOpen && "bg-[#fffaf6]"
-        } absolute h-full justify-center w-full z-30`}
+        } absolute z-30 h-full w-full justify-center shadow-md lg:hidden`}
       >
-        <img src="./img/juanpyLogo.png" className="w-15 h-6 absolute top-3" />
+        <a href="#home" className="flex justify-center">
+          {" "}
+          <img src="./img/juanpyLogo.png" className="w-15 absolute top-3 h-6" />
+        </a>
+
         <button className="absolute right-5 top-3" onClick={openMenu}>
           <Bars />
         </button>
+      </div>
+      <div className="absolute z-30 flex h-full w-full justify-center bg-[#fffaf6] shadow-md max-lg:hidden">
+        <a href="#home">
+          {" "}
+          <img
+            src="./img/juanpyLogo.png"
+            className="w-15 absolute left-10 top-5 h-6"
+          />
+        </a>
+
+        <ul className="text-md absolute top-5 flex items-center justify-center gap-12">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#works">Works</a>
+          </li>
+          <li>
+            <a href="#tech">Technologies</a>
+          </li>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
 
       {isOpen && (
         <ul
           transition-style="in:custom:circle-swoop"
           useRef={elementoAnimadoRef}
-          className="w-full h-screen absolute bg-colorPage flex justify-center flex-col text-center mb-[9rem] gap-12 text-4xl"
+          className="absolute mb-[9rem] flex h-screen w-full flex-col justify-center gap-12 bg-colorPage text-center text-4xl"
         >
           <a href="#home" onClick={openMenu}>
             Home
@@ -45,7 +76,7 @@ export const Navbar = () => {
           <a href="#tech" onClick={openMenu}>
             Technologies
           </a>
-          <a href="#about-me" onClick={openMenu}>
+          <a href="#about-me-iphone" onClick={openMenu}>
             About Me
           </a>
           <a href="#contact" onClick={openMenu}>
@@ -56,7 +87,7 @@ export const Navbar = () => {
       {isClose && (
         <ul
           transition-style="out:custom:circle-swoop"
-          className="w-full h-screen absolute bg-colorPage flex justify-center flex-col text-center mb-[9rem] gap-12 text-4xl"
+          className="absolute mb-[9rem] flex h-screen w-full flex-col justify-center gap-12 bg-colorPage text-center text-4xl"
         >
           <li>Home</li>
           <li>Works</li>

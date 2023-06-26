@@ -50,9 +50,9 @@ export const Technologies = () => {
       <EffectScroll>
         <section
           id="tech"
-          className="containerBox z-20 flex min-h-screen flex-col items-center justify-center pt-[5rem]"
+          className="containerBox z-20 flex min-h-screen flex-col items-center justify-center pt-[4rem]"
         >
-          <h1 className="mb-10 text-center text-5xl font-light ">
+          <h1 className="mb-16 text-center text-5xl font-light ">
             Technologies
           </h1>
           <Elements />

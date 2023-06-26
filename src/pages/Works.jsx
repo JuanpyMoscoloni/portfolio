@@ -12,8 +12,6 @@ export const Works = () => {
       description:
         "La red social se destacará por su diseño intuitivo, personalizable y amigable, brindando una experiencia en línea única y atractiva para los usuarios.",
       imgSrc: "./img/icon.png",
-      gitUrl: "https://github.com/JuanpyMoscoloni/SocialApp",
-      demoUrl: "https://social-application.web.app/login",
       alt:"Social Media App",
     },
   ];
@@ -46,7 +44,7 @@ export const Works = () => {
     <EffectScroll>
       <section
       id="works" 
-        className="containerBox flex flex-col justify-center items-center w-full h-fit pt-[5rem] z-20"
+      className="containerBox z-20 flex min-h-screen flex-col items-center justify-center"
         >
         <h1 className="text-5xl mb-16 font-light text-center">Works</h1>
       {containerMapPhone}
