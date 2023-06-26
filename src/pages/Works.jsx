@@ -3,7 +3,6 @@ import "animate.css";
 import "../styles/styles.scss";
 import EffectScroll from "../components/EffectScroll";
 import Proyects from "../components/Proyects";
-import ProyectsPhone from "../components/ProyectsPhone";
 export const Works = () => {
   const proyects = [
     {
@@ -12,24 +11,20 @@ export const Works = () => {
       description:
         "La red social se destacará por su diseño intuitivo, personalizable y amigable, brindando una experiencia en línea única y atractiva para los usuarios.",
       imgSrc: "./img/icon.png",
-      alt:"Social Media App",
+      alt: "Social Media App",
+    },
+    {
+      id: 2,
+      title: "Portafolio",
+      description:
+        "Portafolio front end: Una web unica, intuitivas y visualmente atractivas para cautivar a los usuarios.",
+      imgSrc: "./img/juanpyLogo.png",
+      alt: "Portafolio",
     },
   ];
-  
+
   const containerMap = proyects.map((proyecto) => (
     <Proyects
-      key={proyecto.id}
-      id={proyecto.id}
-      title={proyecto.title}
-      description={proyecto.description}
-      imgSrc={proyecto.imgSrc}
-      gitUrl={proyecto.gitUrl}
-      demoUrl={proyecto.demoUrl}
-    />
-  ));
-
-  const containerMapPhone = proyects.map((proyecto) => (
-    <ProyectsPhone
       key={proyecto.id}
       id={proyecto.id}
       title={proyecto.title}
@@ -43,12 +38,13 @@ export const Works = () => {
   return (
     <EffectScroll>
       <section
-      id="works" 
-      className="containerBox z-20 flex min-h-screen flex-col items-center justify-center"
-        >
-        <h1 className="text-5xl mb-16 font-light text-center">Trabajos</h1>
-      {containerMapPhone}
-      {containerMap}
+        id="works"
+        className="containerBox z-20 flex flex-col min-h-screen gap-4 items-center justify-center"
+      >
+        <h1 className="mb-16 text-center text-5xl font-light">Trabajos</h1>
+        <div className="w-full h-[54vh] flex max-lg:flex-col items-center gap-8 justify-center">
+        {containerMap}
+        </div>
       </section>
     </EffectScroll>
   );

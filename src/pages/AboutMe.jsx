@@ -17,9 +17,9 @@ export const AboutMe = () => {
               <img
                 src="./img/juanpyFoto.webp"
                 alt=""
-                className="w-[30%] rounded-xl"
+                className="w-[45%] rounded-xl"
               />
-              <div class="flex w-[50%] flex-col gap-5">
+              <div class="flex w-[45%] flex-col gap-5">
                 <h1 className="text-2xl font font-semibold">Moscoloni Juan Pablo</h1>
                 <p className="text-xl font-extralight">
                   Mi objetivo es ser parte del equipo de desarrollo
