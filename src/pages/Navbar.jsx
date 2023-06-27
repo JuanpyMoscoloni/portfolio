@@ -18,7 +18,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 z-30 mx-auto h-[7%] w-[100%] lg:h-[7%]">
+    <div className="fixed top-0 z-30 mx-auto w-[100%] lg:h-[7%]">
       <div
         className={`flex items-center ${
           !isOpen && "bg-[#fefbf8]"
