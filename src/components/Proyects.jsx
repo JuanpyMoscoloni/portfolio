@@ -24,7 +24,7 @@ const Proyects = ({ title, description, imgSrc, alt, gitUrl, demoUrl }) => {
 
   return (
     <div className="h-[500px] max-lg:h-[550px] w-[90%] max-w-[500px] rounded-md border shadow-xl">
-      <div className="flex h-full flex-col items-center justify-center gap-5  p-4">
+      <div className="flex h-full flex-col items-center justify-center gap-6  p-4">
         <div className="flex h-full w-full justify-center p-5">
           <img
             src={imgSrc}
