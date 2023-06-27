@@ -11,6 +11,8 @@ export const Works = () => {
       description:
         "La red social se destacará por su diseño intuitivo, personalizable y amigable, brindando una experiencia en línea única y atractiva para los usuarios.",
       imgSrc: "./img/icon.png",
+      gitUrl:"https://github.com/JuanpyMoscoloni/SocialApp",
+      demoUrl:"https://social-application.web.app/",
       alt: "Social Media App",
     },
     {
@@ -19,7 +21,9 @@ export const Works = () => {
       description:
         "Portafolio front end: Una web unica, intuitivas y visualmente atractivas para cautivar a los usuarios.",
       imgSrc: "./img/juanpyLogo.png",
-      alt: "Portafolio",
+      gitUrl: "https://github.com/JuanpyMoscoloni/portfolio",
+      demoUrl: "https://juanpyportafolio.netlify.app/",
+      alt: "portafolio",
     },
   ];
 

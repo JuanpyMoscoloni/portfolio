@@ -22,7 +22,7 @@ export const Contact = () => {
   
     // Si algún campo está vacío, mostrar mensaje de error
     if (!isFormValid) {
-      toast.error("Por favor, completa todos los campos del formulario.",{
+      toast.error("Por favor, completa todos los campos del formulario. Espere antes de volver a enviar.",{
         position: toast.POSITION.BOTTOM_RIGHT,
       });
       return;
@@ -36,13 +36,12 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          
           toast.success("¡Mail enviado!", {
             position: toast.POSITION.BOTTOM_RIGHT,
           });
         },
         (error) => {
-          console.log(error.text);
           toast.error("Error al enviar mail. Intentelo devuelta.", {
             position: toast.POSITION.BOTTOM_RIGHT,
           });
@@ -78,19 +77,19 @@ export const Contact = () => {
             className="flex w-full flex-col items-center justify-center gap-4 px-7 lg:w-[50%]"
           >
             <ContactInput
-              customPlaceHolder="Nombre"
+              customPlaceHolder="Nombre*"
               nameInput="user_name"
               type="text"
             />
             <ContactInput
-              customPlaceHolder="Email"
+              customPlaceHolder="Email*"
               nameInput="user_email"
               type="email"
             />
             <textarea
               id="mensaje"
               name="message"
-              placeholder="Mensaje"
+              placeholder="Mensaje*"
               rows="5"
               cols="27"
               className="h-full w-full resize-none border border-gray-300 bg-white px-3 py-2 shadow-md focus:outline-colorPage"

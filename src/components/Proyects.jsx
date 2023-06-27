@@ -1,20 +1,29 @@
 import React from "react";
 
-const Proyects = ({ title, description, imgSrc, alt, width, height }) => {
-  const ButtonProyects = ({ texto, link }) => {
+const Proyects = ({ title, description, imgSrc, alt, gitUrl, demoUrl }) => {
+  const ButtonProyects = ({ texto }) => {
     return (
-      <a
-        className="w-full rounded-md border bg-colorPage p-3 text-center"
-        target="_blank"
-        href={link}
-      >
-        {texto}
-      </a>
+      <>
+        <a
+          className="w-full rounded-md border bg-colorPage p-3 text-center"
+          target="_blank"
+          href={demoUrl}
+        >
+          Ver
+        </a>
+        <a
+          className="w-full rounded-md border bg-colorPage p-3 text-center"
+          target="_blank"
+          href={gitUrl}
+        >
+          Repositorio
+        </a>
+      </>
     );
   };
 
   return (
-    <div className="h-full w-[90%] max-w-[500px] rounded-md border shadow-xl">
+    <div className="h-[500px] w-[90%] max-w-[500px] rounded-md border shadow-xl">
       <div className="flex h-full flex-col items-center justify-center gap-5  p-4">
         <div className="flex h-full w-full justify-center p-5">
           <img
@@ -29,15 +38,8 @@ const Proyects = ({ title, description, imgSrc, alt, width, height }) => {
             {description}
           </p>
         </div>
-        <div className="my-2 mt-2 flex h-full w-full justify-around gap-2">
-          <ButtonProyects
-            texto="Ver"
-            link={"https://social-application.web.app/"}
-          />
-          <ButtonProyects
-            texto="Repositorio"
-            link={"https://github.com/JuanpyMoscoloni/SocialApp"}
-          />
+        <div className="my-2 mt-2 flex w-full justify-around gap-2">
+          <ButtonProyects />
         </div>
       </div>
     </div>

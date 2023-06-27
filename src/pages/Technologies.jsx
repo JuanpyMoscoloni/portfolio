@@ -26,7 +26,7 @@ export const Technologies = () => {
 
   function Element({ icon, name }) {
     return (
-      <div className="flex w-full flex-col items-center justify-center rounded-2xl border bg-white/30 p-2 shadow-md hover:border-colorPage">
+      <div className="flex w-full flex-col items-center justify-center rounded-2xl border bg-white/30 p-2 shadow-md hover:border-colorPage hover:border-2">
         <div className="w-[40%]">{icon}</div>
         <h3 className="mt-2 text-center">{name}</h3>
       </div>

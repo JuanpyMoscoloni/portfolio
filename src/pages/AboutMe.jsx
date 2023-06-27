@@ -20,8 +20,8 @@ export const AboutMe = () => {
                 className="w-[45%] rounded-xl"
               />
               <div class="flex w-[45%] flex-col gap-5">
-                <h1 className="text-2xl font font-semibold">Moscoloni Juan Pablo</h1>
-                <p className="text-xl font-extralight">
+                <h1 className="text-3xl font font-semibold">Moscoloni Juan Pablo</h1>
+                <p className="text-xl w-[400px] font-extralight">
                   Mi objetivo es ser parte del equipo de desarrollo
                   front-end de una empresa. Disfruto trabajar en equipo y
                   colaborar para alcanzar metas. Estoy dispuesto a aprender y
