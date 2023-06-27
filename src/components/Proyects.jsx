@@ -23,13 +23,13 @@ const Proyects = ({ title, description, imgSrc, alt, width, height }) => {
             alt={alt}
           />
         </div>
-        <div className="mx-auto my-2 mt-4 flex h-full w-[90%] flex-col gap-5">
+        <div className="mx-auto mt-4 flex h-full w-[90%] flex-col gap-5">
           <h3 className="text-center font-semibold">{title}</h3>
           <p className="mx-auto w-[95%] text-center font-normal leading-7">
             {description}
           </p>
         </div>
-        <div className="my-2 mt-2 flex w-full justify-around gap-2">
+        <div className="my-2 mt-2 flex h-full w-full justify-around gap-2">
           <ButtonProyects
             texto="Ver"
             link={"https://social-application.web.app/"}

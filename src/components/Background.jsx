@@ -55,7 +55,7 @@ const Background = () => {
           },
           links: {
             color: "#D2C2B0",
-            distance: 160,
+            distance: 120,
             enable: true,
             opacity: 1,
             width: 1,
@@ -70,7 +70,7 @@ const Background = () => {
               default: "bounce",
             },
             random: false,
-            speed: 0.8,
+            speed: 1.2,
             straight: false,
           },
           number: {
