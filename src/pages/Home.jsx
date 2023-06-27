@@ -7,13 +7,13 @@ export const Home = () => {
     <>
       <section id="home" className="mx-auto h-screen w-full">
         <div className="flex h-screen w-full flex-col justify-center gap-2 p-4">
-          <h1 className="text-center z-10 text-7xl font-light max-lg:text-6xl">
+          <h1 className="z-10 text-center text-7xl font-light max-lg:text-6xl">
             Moscoloni Juan P.
           </h1>
-          <h3 className="text-center z-10 text-lg font-extralight">
+          <h3 className="z-10 text-center text-lg font-extralight">
             Front End Developer
           </h3>
-          <div className="flex z-10 justify-center gap-2">
+          <div className="z-10 flex justify-center gap-2">
             <a href="https://github.com/JuanpyMoscoloni" target="_blank">
               <GitHub width={40} height={40} />
             </a>
@@ -27,7 +27,7 @@ export const Home = () => {
         </div>
         <a
           href="#works"
-          className="float-animation absolute bottom-[3rem] mb-3 flex w-full justify-center"
+          className="float-animation absolute bottom-[3rem] select-none mx-auto mb-3 flex w-full justify-center"
         >
           <img src="./img/flecha.png" className="w-15 h-10 bg-transparent" />
         </a>
