@@ -18,7 +18,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-20 mx-auto h-[6%] w-full lg:h-[7%]">
+    <div className="fixed top-0 z-30 mx-auto h-[7%] w-[100%] lg:h-[7%]">
       <div
         className={`flex items-center ${
           !isOpen && "bg-[#fefbf8]"
@@ -26,10 +26,10 @@ export const Navbar = () => {
       >
         <a href="#home" className="flex justify-center">
           {" "}
-          <img src="./img/juanpyLogo.png" className="w-15 absolute top-4 h-6" />
+          <img src="./img/juanpyLogo.png" className="w-15 absolute top-5 h-6" />
         </a>
 
-        <button className="absolute right-5 top-4" onClick={openMenu}>
+        <button className="absolute right-5 top-5" onClick={openMenu}>
           <Bars />
         </button>
       </div>
