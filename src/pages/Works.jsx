@@ -25,6 +25,16 @@ export const Works = () => {
       demoUrl: "https://juanpyportafolio.netlify.app/",
       alt: "portafolio",
     },
+    {
+    id: 3,
+    title: "VRM Comunicaciones",
+    description:
+      "Pagina de venta de productos de comunicaciones.",
+    imgSrc: "./img/vrmlogo.jpg",
+    gitUrl: "https://github.com/JuanpyMoscoloni/vrmcomunicaciones-project/tree/dev",
+    demoUrl: "https://vrmcomunicaciones.000webhostapp.com/",
+    alt: "portafolio",
+  },
   ];
 
   const containerMap = proyects.map((proyecto) => (
