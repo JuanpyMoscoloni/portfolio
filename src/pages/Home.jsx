@@ -24,10 +24,19 @@ export const Home = () => {
               <Linkedin width={40} height={40} />
             </a>
           </div>
+          <div className="z-10 flex justify-center">
+            <a
+              href="./CV-Moscoloni-Juan-Pablo.pdf"
+              target="_blank"
+              className="w-fit rounded-lg border border-black p-2 px-8 transition-all hover:bg-black hover:text-white"
+            >
+              Abrir CV
+            </a>
+          </div>
         </div>
         <a
           href="#works"
-          className="float-animation absolute bottom-[3rem] select-none mx-auto mb-3 flex w-full justify-center"
+          className="float-animation absolute bottom-[3rem] mx-auto mb-3 flex w-full select-none justify-center"
         >
           <img src="./img/flecha.png" className="w-15 h-10 bg-transparent" />
         </a>
