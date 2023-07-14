@@ -32,7 +32,7 @@ export const Works = () => {
       "Pagina de venta de productos de comunicaciones.",
     imgSrc: "./img/vrmlogo.jpg",
     gitUrl: "https://github.com/JuanpyMoscoloni/vrmcomunicaciones-project/tree/dev",
-    demoUrl: "https://vrmcomunicaciones.000webhostapp.com/",
+    demoUrl: "https://vrmcomunicaciones.com.ar/",
     alt: "portafolio",
   },
   ];
