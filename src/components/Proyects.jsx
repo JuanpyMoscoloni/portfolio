@@ -34,7 +34,7 @@ const Proyects = ({ title, description, imgSrc, alt, gitUrl, demoUrl }) => {
         </div>
         <div className="mx-auto mt-4 flex h-full w-[90%] flex-col gap-5">
           <h3 className="text-center font-semibold">{title}</h3>
-          <p className="mx-auto w-[95%] text-center font-normal leading-7">
+          <p className="mx-auto w-[90%] text-center font-normal leading-7">
             {description}
           </p>
         </div>
