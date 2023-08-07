@@ -35,6 +35,16 @@ export const Works = () => {
     demoUrl: "https://vrmcomunicaciones.com.ar/",
     alt: "portafolio",
   },
+  {
+    id: 4,
+    title: "Aquasol Quiz App",
+    description:
+      "Aplicacion estilo quiz y completar la frase, para la gente de Aquasol.",
+    imgSrc: "./img/aquasolLogo.png",
+    gitUrl: "https://github.com/JuanpyMoscoloni/AquasolQuizApp",
+    demoUrl: "https://aquasolapp.netlify.app/",
+    alt: "aquasolApp",
+  }
   ];
 
   const containerMap = proyects.map((proyecto) => (
