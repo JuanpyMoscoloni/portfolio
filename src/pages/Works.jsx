@@ -66,7 +66,7 @@ export const Works = () => {
         className="containerBox z-20 flex flex-col h-full w-full pt-[11rem] max-lg:pt-[6rem] gap-4 items-center justify-center"
       >
         <h1 className="mb-16 text-center text-5xl font-light">Trabajos</h1>
-        <div className="w-full h-fit flex max-lg:flex-col items-center gap-8 justify-center">
+        <div className="w-full grid grid-cols-3 max-lg:grid-cols-1 gap-8">
         {containerMap}
         </div>
       </section>
