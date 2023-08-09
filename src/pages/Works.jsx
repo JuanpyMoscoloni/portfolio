@@ -44,6 +44,16 @@ export const Works = () => {
     gitUrl: "https://github.com/JuanpyMoscoloni/AquasolQuizApp",
     demoUrl: "https://aquasolapp.netlify.app/",
     alt: "aquasolApp",
+  },
+  {
+    id: 5,
+    title: "Mirador Beach App",
+    description:
+      "Aplicacion para reserva de carpas.",
+    imgSrc: "./img/logo.png",
+    gitUrl: "https://juanpyportafolio.netlify.app/",
+    demoUrl: "https://juanpyportafolio.netlify.app/",
+    alt: "miradorBeachApp",
   }
   ];
 
