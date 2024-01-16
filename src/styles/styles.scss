@@ -9,6 +9,15 @@ html {
   scroll-behavior: smooth;
 }
 
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; // Ensure the particles are rendered behind other components
+}
+
 /* Estilos para el track del scroll */
 ::-webkit-scrollbar {
   width: 9px; /* Ancho del scroll */

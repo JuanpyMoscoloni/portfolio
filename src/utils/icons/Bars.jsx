@@ -3,7 +3,7 @@ import React from "react";
 export const Bars = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
