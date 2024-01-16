@@ -64,7 +64,7 @@ export const Navbar = () => {
       {isOpen && (
         <ul
           transition-style="in:custom:circle-swoop"
-          useRef={elementoAnimadoRef}
+          ref={elementoAnimadoRef}
           className="absolute mb-[9rem] flex h-screen w-full flex-col justify-center gap-12 bg-colorPage text-center text-4xl"
         >
           <a href="#home" onClick={openMenu}>
